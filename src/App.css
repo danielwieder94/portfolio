@@ -1,38 +1,242 @@
+h2 {
+  letter-spacing: 12px;
+  font-size: 4rem;
+  opacity: 0.80;
+  
+}
+
 .App {
-  text-align: center;
+  word-spacing: 0.4rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Add this to center content vertically */
+  width: 100%; /* Ensure it takes full width */
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(-50px); /* Adjust the value for desired effect */
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px); /* Adjust the value for desired effect */
+  }
+}
+
+
+
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+
+ .form-wrapper {
+  min-height: 80vh;
+ }
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  position: relative;
+}
+
+.glassmorphism-wrapper {
+   position: relative; 
+  /* z-index: 1;  */
+  margin: auto;
+  /* top: 40px; */
+  max-height: 100%;
+  max-width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 252, 252, 0),    
+    rgba(139, 139, 139, 0.116), 
+    rgba(150, 149, 149, 0.186),   
+    rgba(139, 139, 139, 0.116),    
+    rgba(255, 255, 255, 0)     
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* For Safari browser support */
+  padding: 20px; 
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .glassmorphism-wrapper {
+    padding: 20px; /* Reduce padding for smaller screens */
+    border-radius: 10px; /* Adjust border-radius */
+  }
+
+  main {
+    padding: 0 10%; /* Add some padding around the main content */
+  }
+
+  .fade-in, .fade-out {
+    max-width: 100%; /* Ensure sections don't overflow */
+    padding: 20px; /* Add padding to give space around content */
+  }
+
+  #home, #about, #projects, #experience, #contact {
+    width: 100%; /* Ensure sections take full width */
+    padding: 15px; /* Add padding for spacing */
+  }
+
+  
+
+  .text-center h2 {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .text-center p {
+    font-size: 1rem; /* Adjust paragraph font size for readability */
+  }
+
+  /* Adjustments for Navbar, Footer, and any other specific elements */
+  .navbar, .footer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* CONTACT ME BUTTON */
+.contact-me-btn {
+  position: relative;
+  display: inline-block;
+  /* padding: 0.5rem 1rem; Adjust padding as needed */
+  color: rgba(156, 163, 175, 0.75); /* Initial text color */
+  text-decoration: none; /* Optional: to remove underline from links */
+  transition: color 0.3s ease;
+}
+
+.contact-me-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the bottom border */
+  background-color: rgba(255, 255, 255, 0.9); /* Bottom border color */
+  transition: width 0.3s ease;
+}
+
+.contact-me-btn:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+.contact-me-btn:hover {
+  color: rgba(255, 255, 255, 0.9); /* Text color changes on hover */
+}
+
+/* CONTACT ME SUCCESS */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: rgba(65, 82, 103, 0.4); /* Adjust the color as needed */
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: rgba(203, 213, 225, 0.8); /* Adjust the stroke color as needed */
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px rgba(59, 130, 246, 0.50); /* Adjust the shadow color as needed */
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  }
+  
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px rgba(107, 136, 179, 0.5); /* Adjust the fill color as needed */
+    
+  }
+}
+
+.success-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #e2e8f0; /* Adjust color as needed */
+}
+
