@@ -36,19 +36,20 @@ const About = () => {
         <p className="mt-[5%] max-w-2xl text-center text-slate-300/90">
           Beyond the rhythms and codes, my intrigue with the human mind led me
           to explore psychology and Neuro-Linguistic Programming. <br /> This
-          wasn't just academic curiosity; it was a quest to understand the
-          intricate tapestry of human thoughts and behaviors. These studies have
-          become a cornerstone of my approach to technology. <br /> In coding,
-          as in music, there's an audience to connect with. My background in
-          psychology helps me develop software that doesn't just perform tasks
-          but also engages and resonates with humans, not just users.
+          wasn't just academic curiosity; it was a first step towards
+          understanding the intricate tapestry of human thoughts and behaviors.
+          These studies have become a cornerstone of my approach to technology.{" "}
+          <br /> In coding, as in music, there's an audience to connect with. My
+          background in psychology helps me develop software that doesn't just
+          perform tasks but also engages and resonates with humans, not just
+          users.
         </p>
         <p className="mt-[5%] max-w-2xl text-center text-slate-300/90">
           Today, my life is full with experiences. The lessons from strings and
           keys (no pun intended, code-geeks), chords and code, human psychology
           and digital logic, all harmonize to shape my unique perspective in
           technology. <br /> Whether I'm developing user-friendly applications
-          or architecting systems, I strive to innovate with empathy and
+          or complex back-end solutions, I strive to innovate with empathy and
           precision, ensuring that every project not only meets technical
           standards but also enriches the user's experience. <br /> My journey
           from music to technology might seem like a shift of gears, but for me,
