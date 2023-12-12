@@ -7,7 +7,7 @@ const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
-    <section id="skills" className="w-[85%] fade-out ">
+    <section id="skills" className=" w-[85%] fade-out ">
       <div className="mx-auto py-32 sm:py-48 lg:py-56 ">
         <h2 className="font-bold text-center text-slate-300">SKILLS</h2>
         <div className="my-4 h-[350px]">

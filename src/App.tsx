@@ -53,7 +53,7 @@ function App() {
     <div className="App">
       <Navbar currentSection={`#${currentSection}`} />
       <ParticlesBackground />
-      <main className=" glassmorphism-wrapper">
+      <main className="glassmorphism-wrapper">
         <Home />
         <Skills />
         <Experience />
