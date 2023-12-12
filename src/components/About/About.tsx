@@ -44,16 +44,16 @@ const About = () => {
           but also engages and resonates with humans, not just users.
         </p>
         <p className="mt-[5%] max-w-2xl text-center text-slate-300/90">
-          Today, my life is a symphony of experiences. The lessons from strings
-          and keys, chords and code, human psychology and digital logic, all
-          harmonize to shape my unique perspective in technology. <br /> Whether
-          I'm developing user-friendly applications or architecting systems, I
-          strive to innovate with empathy and precision, ensuring that every
-          project not only meets technical standards but also enriches the
-          user's experience. <br /> My journey from music to technology might
-          seem like a shift of gears, but for me, it's been a continuous melody
-          of learning, evolving, and connecting – a melody that plays on in
-          every line of code I write.
+          Today, my life is full with experiences. The lessons from strings and
+          keys (no pun intended, code-geeks), chords and code, human psychology
+          and digital logic, all harmonize to shape my unique perspective in
+          technology. <br /> Whether I'm developing user-friendly applications
+          or architecting systems, I strive to innovate with empathy and
+          precision, ensuring that every project not only meets technical
+          standards but also enriches the user's experience. <br /> My journey
+          from music to technology might seem like a shift of gears, but for me,
+          it's been a continuous melody of learning, evolving, and connecting –
+          a melody that plays on in every line of code I write.
         </p>
 
         {/* Additional content can be added here */}
